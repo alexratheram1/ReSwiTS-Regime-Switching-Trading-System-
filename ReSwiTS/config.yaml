@@ -1,0 +1,17 @@
+data:
+  tickers: ["SPY", "QQQ", "BTC-USD"]
+  interval: "1d"   # or "1h" this is for anybody other than me who reads this, but probs it will just be me
+  lookback_years: 8
+
+backtest:
+  starting_cash: 100000
+  fee_bps: 1.0         # 1 basis point per side
+  slippage_bps: 2.0
+  risk_free_rate: 0.01
+
+hmm:
+  n_states: 3
+  covariance_type: "full"
+  random_state: 42
+  train_start: "2017-01-01"
+  train_end:   "2023-12-31"
